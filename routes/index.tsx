@@ -18,8 +18,22 @@ export default function Home(props: PageProps<Grid>) {
         <title>pixelpage</title>
         <link rel="icon" type="image/jpg" href="/logo.jpg" />
       </Head>
-      <div class="p-4 mx-auto max-w-screen-md">
+      <div class="p-4 mx-auto max-w-screen-md flex justify-center">
         <Pixels grid={props.data} />
+      </div>
+      <div class="p-4 flex justify-evenly gap-8 text-center">
+        <a
+          href="https://github.com/denoland/pixelpage"
+          class="text-blue-500 hover:underline"
+        >
+          View Source on GitHub
+        </a>
+        <a
+          href="https://deno.com/deploy"
+          class="text-blue-500 hover:underline"
+        >
+          Powered by Deno Deploy
+        </a>
       </div>
     </>
   );
